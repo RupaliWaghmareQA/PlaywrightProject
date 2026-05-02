@@ -1,0 +1,47 @@
+{
+"validUser": {
+    "username": "john123",
+    "password": "password123"
+},
+
+"invalidUser" :{
+    "username": "wronguser",
+    "password": "wrongpassword"
+},
+  "newUser": {
+    "firstName": "Rahul",
+    "lastName": "Sharma",
+    "address": "123 MG Road",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "zipCode": "560001",
+    "phone": "9876543210",
+    "ssn": "123456789",
+    "username": "rahul_test01",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234"
+  },
+  "fundTransfer": {
+    "amount": "500"
+  },
+  "loanRequest": {
+    "loanAmount": "10000",
+    "downPayment": "1000"
+  },
+  "billPayment": {
+    "payeeName": "Electricity Board",
+    "address": "45 Power Street",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "zipCode": "560002",
+    "phone": "9988776655",
+    "accountNumber": "10023",
+    "verifyAccount": "10023",
+    "amount": "200"
+  },
+  "updateProfile": {
+    "address": "456 New Street",
+    "city": "Mumbai",
+    "phone": "9123456789"
+  }
+}
