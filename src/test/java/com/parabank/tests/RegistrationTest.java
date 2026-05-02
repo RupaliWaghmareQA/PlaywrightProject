@@ -34,10 +34,11 @@ public class RegistrationTest extends BaseTest {
                 
                 "Registration was not successful");
                 
-        // Implement registration test steps here
     }   
 
 
+    //Filing Registration form with valid data and verifying successful registration
+    //Filing Registration form with valid data and verifying successful registration
 
 
 }
