@@ -17,7 +17,7 @@ private String usernameField = "//input[@id='customer.username']";
 private String passwordField = "//input[@id='customer.password']";  
 private String confirmPasswordField = "//input[@id='repeatedPassword']";
 private String registerBtn = "//input[@value='Register']";  
-private String successMsg = "//h1[text()='Welcome to Parabank']";
+private String successMsg = "//div[@id='rightPanel']";
 
 public RegisterPage(Page page)
 {

@@ -18,29 +18,13 @@
 
     <dependencies>
 
-        <!-- Playwright -->
-        <dependency>
-            <groupId>com.microsoft.playwright</groupId>
-            <artifactId>playwright</artifactId>
-            <version>1.44.0</version>
-        </dependency>
-
+       
   <!-- Playwright for Java -->
     <dependency>
       <groupId>com.microsoft.playwright</groupId>
       <artifactId>playwright</artifactId>
       <version>1.44.0</version>
     </dependency>
-
-
-
-
-
-
-
-      
-
-
 
          <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -57,13 +41,15 @@
       <version>7.9.0</version>
     </dependency>
 
+<!-- Fixes SLF4J warning -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>2.0.9</version>
+    <scope>test</scope>
+</dependency>
 
-
-
-
-
-
-    </dependencies>
+   </dependencies>
 
     <build>
         <plugins>
@@ -71,11 +57,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
-
-
                 <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                    <suiteXmlFile>     target/test-classes/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
             </plugin>

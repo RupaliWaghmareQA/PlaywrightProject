@@ -32,13 +32,10 @@ public class RegistrationTest extends BaseTest {
                 registerPage.clickRegister();
                 Assert.assertTrue(registerPage.isRegistrationSuccessful(),
                 
-                "Registration was not successful");
+                "Your account was created successfully. You are now logged in.");
                 
     }   
 
-
-    //Filing Registration form with valid data and verifying successful registration
-    //Filing Registration form with valid data and verifying successful registration
 
 
 }

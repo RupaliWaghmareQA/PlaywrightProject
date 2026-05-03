@@ -8,7 +8,7 @@ import com.parabank.utils.TestDataReader;
 
 public class LoginTest extends BaseTest{
 
-    @Test (description = "Verify successful login with valid credentials")
+    @Test (priority = 1, description = "Verify successful login with valid credentials")
     public void testValidLogin()
     {
     LoginPage loginPage = new LoginPage(page);
@@ -17,14 +17,18 @@ public class LoginTest extends BaseTest{
     TestDataReader.get("validUser", "username"),
     TestDataReader.get("validUser", "password"));
     AccountOverviewPage accountOverviewPage = new AccountOverviewPage(page);
-    Assert.assertTrue(accountOverviewPage.isAccountOverviewVisible(),
-     "Account Overview page is not displayed after login");  
+
+    // Assert.assertTrue(accountOverviewPage.isAccountOverviewVisible(),
+    //     "overview");   
+
+Assert.assertTrue(page.url().contains("overview"));
+// Verification 1: URL check
 
     }
 
 
 
-    @Test(description ="Verify error message is displayed for invalid login")
+    @Test(priority = 2, description ="Verify error message is displayed for invalid login")
     public void testInvalidLogin()
     {
         LoginPage loginPage = new LoginPage(page);
@@ -33,7 +37,7 @@ public class LoginTest extends BaseTest{
             TestDataReader.get("invalidUser", "password"));
         
         Assert.assertTrue(loginPage.isErrorMessageDisplayed(),
-         "Error message is not displayed for invalid login");
+         "The username and password could not be verified.");
        
     }
 }

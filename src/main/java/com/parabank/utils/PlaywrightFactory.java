@@ -27,12 +27,12 @@ return page;
 
 
 
-public void closeBrowser()
-{
-    //browser.close();
+// public void closeBrowser()
+// {
+//     //browser.close();
 
-       if (browser != null) browser.close();
-        if (playwright != null) playwright.close();
-}
+//        if (browser != null) browser.close();
+//         if (playwright != null) playwright.close();
+// }
 
 }

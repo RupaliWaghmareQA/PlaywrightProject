@@ -11,7 +11,10 @@ private String userNamefield = "//input[@name='username']";
 private String passwordfield ="//input[@name=\"password\"]";
 private String loginbtn ="//input[@type=\"submit\"]";
 
-private String errorMsg ="//p[@class=\"error\"]";
+private String errorMsg ="//p[@class='error']";
+
+
+//p[@class="error"]
 
 
 public LoginPage(Page page)

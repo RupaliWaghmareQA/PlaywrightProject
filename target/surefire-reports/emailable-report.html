@@ -8,57 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">75,902</td><td></td><td></td></tr>
+<tr><th colspan="8">ParaBank Suite</th></tr>
+<tr><td><a href="#t0">Login Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">85,905</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Registration Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">44,096</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">130,001</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.parabank.tests.LoginTest</td><td><a href="#m0">testValidLogin</a></td><td rowspan="1">1777717976247</td><td rowspan="1">32673</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParaBank Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.parabank.tests.LoginTest</td><td><a href="#m0">testInvalidLogin</a></td><td rowspan="1">1777800082311</td><td rowspan="1">7043</td></tr><tr class="passedeven"><td><a href="#m1">testValidLogin</a></td><td rowspan="1">1777800055382</td><td rowspan="1">14218</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Registration Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.tests.RegistrationTest</td><td><a href="#m2">testUserRegistration</a></td><td rowspan="1">1777800100706</td><td rowspan="1">29263</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.parabank.tests.LoginTest#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\frames.js:1052:23)
-    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-	at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:756)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:755)
-	at com.microsoft.playwright.Page.fill(Page.java:4790)
-	at com.parabank.pages.LoginPage.enterUsername(LoginPage.java:25)
-	at com.parabank.pages.LoginPage.login(LoginPage.java:43)
-	at com.parabank.tests.LoginTest.testValidLogin(LoginTest.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\frames.js:1052:23)
-    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-8361869226065126597\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 44 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Tests</h2><h3 id="m0">com.parabank.tests.LoginTest#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.parabank.tests.LoginTest#testValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Registration Tests</h2><h3 id="m2">com.parabank.tests.RegistrationTest#testUserRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
