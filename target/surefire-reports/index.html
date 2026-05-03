@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ParaBank_Suite" class="navigator-link">
-              <span class="suite-name border-passed">ParaBank Suite</span>
+              <span class="suite-name border-failed">ParaBank Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ParaBank_Suite" class="hide-methods failed suite-ParaBank_Suite"> (hide)</a> <!-- hide-methods failed suite-ParaBank_Suite -->
+                      <a href="#" panel-name="suite-ParaBank_Suite" class="show-methods failed suite-ParaBank_Suite"> (show)</a> <!-- show-methods failed suite-ParaBank_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-ParaBank_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Suite" title="com.parabank.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Suite" title="com.parabank.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParaBank_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +122,7 @@
                     <div class="method-list-content passed suite-ParaBank_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParaBank_Suite" title="com.parabank.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ParaBank_Suite" title="com.parabank.tests.RegistrationTest" class="method navigator-link" hash-for-method="testUserRegistration">testUserRegistration</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParaBank_Suite" title="com.parabank.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ParaBank_Suite -->
@@ -128,6 +137,130 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ParaBank_Suite" class="panel ParaBank_Suite">
+          <div class="suite-ParaBank_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.parabank.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin">
+                  </a> <!-- testInvalidLogin -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\frames.js:1052:23)
+    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+	at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:756)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:755)
+	at com.microsoft.playwright.Page.fill(Page.java:4790)
+	at com.parabank.pages.LoginPage.enterUsername(LoginPage.java:29)
+	at com.parabank.pages.LoginPage.login(LoginPage.java:47)
+	at com.parabank.tests.LoginTest.testInvalidLogin(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\frames.js:1052:23)
+    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 43 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error message is displayed for invalid login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\stackTrace.js:49:17)
+    at LongStandingScope._race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:84:17)
+    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:96:36)
+    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+	at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:756)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:755)
+	at com.microsoft.playwright.Page.fill(Page.java:4790)
+	at com.parabank.pages.LoginPage.enterUsername(LoginPage.java:29)
+	at com.parabank.pages.LoginPage.login(LoginPage.java:47)
+	at com.parabank.tests.LoginTest.testValidLogin(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\stackTrace.js:49:17)
+    at LongStandingScope._race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:84:17)
+    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:96:36)
+    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 43 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify successful login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParaBank_Suite-class-failed -->
           <div class="suite-ParaBank_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -141,32 +274,6 @@
                   <span class="method-name">testUserRegistration</span>
                   <em>
 (Verify new user registration)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ParaBank_Suite-class-passed -->
-          <div class="suite-ParaBank_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.parabank.tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidLogin">
-                  </a> <!-- testInvalidLogin -->
-                  <span class="method-name">testInvalidLogin</span>
-                  <em>
-(Verify error message is displayed for invalid login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                  <em>
-(Verify successful login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,22 +340,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUserRegistration')
-data.setCell(0, 2, 'com.parabank.tests.RegistrationTest')
-data.setCell(0, 3, 29263);
+data.setCell(0, 1, 'testInvalidLogin')
+data.setCell(0, 2, 'com.parabank.tests.LoginTest')
+data.setCell(0, 3, 32049);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'com.parabank.tests.LoginTest')
-data.setCell(1, 3, 14218);
+data.setCell(1, 1, 'testUserRegistration')
+data.setCell(1, 2, 'com.parabank.tests.RegistrationTest')
+data.setCell(1, 3, 30581);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testInvalidLogin')
+data.setCell(2, 1, 'testValidLogin')
 data.setCell(2, 2, 'com.parabank.tests.LoginTest')
-data.setCell(2, 3, 7043);
+data.setCell(2, 3, 11912);
 window.suiteTableData['ParaBank_Suite']= { tableData: data, tableDiv: 'times-div-ParaBank_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-ParaBank_Suite">
               </div> <!-- times-div-ParaBank_Suite -->
             </div> <!-- times-div -->
@@ -280,39 +387,43 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">51053 ms</span>
+                <span class="method-start">40308 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65284 ms</span>
+                <span class="method-start">52244 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">68525 ms</span>
+                <span class="method-start">52775 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">77982 ms</span>
+                <span class="method-start">62670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85029 ms</span>
+                <span class="method-start">94749 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.parabank.tests.RegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">85945 ms</span>
+                <span class="method-start">95856 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserRegistration</span>
-                <span class="method-start">96377 ms</span>
+                <span class="method-start">108119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">125644 ms</span>
+                <span class="method-start">138702 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

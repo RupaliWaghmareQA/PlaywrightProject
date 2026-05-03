@@ -7,6 +7,7 @@ public class LoginPage {
 private Page page;
 
     // Locators
+    long timestamp  = System.currentTimeMillis();
 private String userNamefield = "//input[@name='username']";
 private String passwordfield ="//input[@name=\"password\"]";
 private String loginbtn ="//input[@type=\"submit\"]";

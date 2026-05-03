@@ -17,13 +17,8 @@ public class LoginTest extends BaseTest{
     TestDataReader.get("validUser", "username"),
     TestDataReader.get("validUser", "password"));
     AccountOverviewPage accountOverviewPage = new AccountOverviewPage(page);
-
-    // Assert.assertTrue(accountOverviewPage.isAccountOverviewVisible(),
-    //     "overview");   
-
-Assert.assertTrue(page.url().contains("overview"));
+ Assert.assertTrue(page.url().contains("overview"));
 // Verification 1: URL check
-
     }
 
 

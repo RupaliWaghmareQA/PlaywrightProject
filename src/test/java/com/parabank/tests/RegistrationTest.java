@@ -25,7 +25,7 @@ public class RegistrationTest extends BaseTest {
             TestDataReader.get("newUser" ,"zipCode"),
             TestDataReader.get("newUser" ,"phone"),
             TestDataReader.get("newUser" ,"ssn"),
-            TestDataReader.get("newUser" ,"username"),
+            TestDataReader.get("newUser" ,"username"), 
             TestDataReader.get("newUser" ,"password")
                 );  
 
