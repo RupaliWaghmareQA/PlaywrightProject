@@ -3,11 +3,9 @@ import com.microsoft.playwright.Page;
 
 public class TransferFundsPage {
 
-
-
     private Page page;
 
-    private TransferFundsPage(Page page)
+    public TransferFundsPage(Page page)
     {
         this.page=page; 
     }

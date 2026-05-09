@@ -7,7 +7,6 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testInvalidLogin"/>
           <include name="testValidLogin"/>
         </methods>
       </class> <!-- com.parabank.tests.LoginTest -->

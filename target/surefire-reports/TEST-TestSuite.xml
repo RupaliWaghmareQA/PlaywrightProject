@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="143.179" tests="3" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="172.547" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\The Lenovo\AppData\Local\Temp\surefire346359301589923026\surefirebooter-20260503182941395_3.jar C:\Users\The Lenovo\AppData\Local\Temp\surefire346359301589923026 2026-05-03T18-29-40_502-jvmRun1 surefire-20260503182941395_1tmp surefire_0-20260503182941395_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\The Lenovo\AppData\Local\Temp\surefire15937854661815839919\surefirebooter-20260505061427759_3.jar C:\Users\The Lenovo\AppData\Local\Temp\surefire15937854661815839919 2026-05-05T06-14-27_007-jvmRun1 surefire-20260505061427759_1tmp surefire_0-20260505061427759_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\The Lenovo\OneDrive\Desktop\PlayWright\playwright-java\target\test-classes;C:\Users\The Lenovo\OneDrive\Desktop\PlayWright\playwright-java\target\classes;C:\Users\The Lenovo\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\The Lenovo\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\The Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\The Lenovo\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\The Lenovo\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\The Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\The Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\The Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\The Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\The Lenovo\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\The Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\The Lenovo\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\The Lenovo\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\The Lenovo\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\The Lenovo\AppData\Local\Temp\surefire346359301589923026\surefirebooter-20260503182941395_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\The Lenovo\AppData\Local\Temp\surefire15937854661815839919\surefirebooter-20260505061427759_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26.0.1+8-34"/>
@@ -59,37 +59,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testValidLogin" classname="com.parabank.tests.LoginTest" time="11.931">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;TargetClosedError&#10;  stack=&apos;TargetClosedError:Target page, context or browser has been closed&#10;Error&#10;    at captureRawStack (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\stackTrace.js:49:17)&#10;    at LongStandingScope._race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:91:52)&#10;    at LongStandingScope.race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:84:17)&#10;    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:96:36)&#10;    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)&#10;" type="com.microsoft.playwright.impl.TargetClosedError"><![CDATA[com.microsoft.playwright.impl.TargetClosedError: 
-Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\stackTrace.js:49:17)
-    at LongStandingScope._race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("//input[@name='username']")
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-	at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:756)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:755)
-	at com.microsoft.playwright.Page.fill(Page.java:4790)
-	at com.parabank.pages.LoginPage.enterUsername(LoginPage.java:29)
-	at com.parabank.pages.LoginPage.login(LoginPage.java:47)
-	at com.parabank.tests.LoginTest.testValidLogin(LoginTest.java:15)
+  <testcase name="testValidLogin" classname="com.parabank.tests.LoginTest" time="9.904">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.parabank.tests.LoginTest.testValidLogin(LoginTest.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -120,108 +96,12 @@ Call log:
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\stackTrace.js:49:17)
-    at LongStandingScope._race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("//input[@name='username']")
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 43 more
 ]]></failure>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testInvalidLogin" classname="com.parabank.tests.LoginTest" time="32.073">
-    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\progress.js:78:26)&#10;    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\frames.js:1052:23)&#10;    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\frameDispatcher.js:170:30)&#10;    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;//input[@name=&apos;username&apos;]&quot;)&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\frames.js:1052:23)
-    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("//input[@name='username']")
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-	at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:756)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:755)
-	at com.microsoft.playwright.Page.fill(Page.java:4790)
-	at com.parabank.pages.LoginPage.enterUsername(LoginPage.java:29)
-	at com.parabank.pages.LoginPage.login(LoginPage.java:47)
-	at com.parabank.tests.LoginTest.testInvalidLogin(LoginTest.java:30)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\frames.js:1052:23)
-    at FrameDispatcher.fill (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\THELEN~1\AppData\Local\Temp\playwright-java-10862346016184707655\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator("//input[@name='username']")
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 43 more
-]]></failure>
-  </testcase>
-  <testcase name="testUserRegistration" classname="com.parabank.tests.RegistrationTest" time="30.586"/>
+  <testcase name="testInvalidLogin" classname="com.parabank.tests.LoginTest" time="7.478"/>
+  <testcase name="testUserRegistration" classname="com.parabank.tests.RegistrationTest" time="29.132"/>
 </testsuite>
